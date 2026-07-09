@@ -22,16 +22,16 @@ public class StepsLibrary {
 	@QAFTestStep(description = "search for {0}")
 	public static void searchFor(String searchTerm) {
 //		QAFWebElement inputField = new WebDriverTestBase().getDriver().findElement("#todo-input");
-		sendKeys(searchTerm, "#todo-input");
-		sendKeys("\n", "#todo-input");
-		sendKeys(searchTerm, "#todo-input");
-		sendKeys("\n", "#todo-input");
-		sendKeys(searchTerm, "#todo-input");
-		sendKeys("\n", "#todo-input");
-		sendKeys(searchTerm, "#todo-input");
-		sendKeys("\n", "#todo-input");
-		sendKeys(searchTerm, "#todo-input");
-		sendKeys("\n", "#todo-input");
+		sendKeys(searchTerm, "todo.input");
+		sendKeys("\n", "todo.input");
+		sendKeys(searchTerm, "todo.input");
+		sendKeys("\n", "todo.input");
+		sendKeys(searchTerm, "todo.input");
+		sendKeys("\n", "todo.input");
+		sendKeys(searchTerm, "todo.input");
+		sendKeys("\n", "todo.input");
+		sendKeys(searchTerm, "todo.input");
+		sendKeys("\n", "todo.input");
 		try {
 			Thread.sleep(5000); // Handle InterruptedException
 		} catch (InterruptedException e) {
